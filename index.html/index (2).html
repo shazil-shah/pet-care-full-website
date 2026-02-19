@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pet Care Blog</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Splash / Interference -->
+
+  <div id="splash">
+
+    <h1>Pet Care</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="pet" />
+
+  </div>
+
+  <!-- Main Content -->
+
+  <div id="main">
+
+    <header>
+
+      <h1>Pet Care Blog</h1>
+
+    </header>
+
+    <!-- Blog Section -->
+
+    <div id="blog-section">
+
+      <!-- Example blog -->
+
+      <div class="blog-card">
+
+        <img src="https://images.unsplash.com/photo-1561948955-570d09a09c4b" alt="Dog">
+
+        <h3>John Doe</h3>
+
+        <p>Today I played with my lovely dog in the park. He was so happy and full of energy!</p>
+
+      </div>
+
+      <div class="blog-card">
+
+        <img src="https://images.unsplash.com/photo-1601758123927-6a57f3bb0090" alt="Cat">
+
+        <h3>Jane Smith</h3>
+
+        <p>My cat discovered a new toy. She was chasing it all day long. Cats are so curious!</p>
+
+      </div>
+
+    </div>
+
+    <!-- Upload Section -->
+
+    <div id="upload-section">
+
+      <button onclick="showUsernamePopup()">Upload Blog</button>
+
+      <div id="blog-input">
+
+        <textarea id="blogText" placeholder="Write your blog here..."></textarea>
+
+        <input type="file" id="blogImage" accept="image/*">
+
+        <br>
+
+        <button onclick="submitBlog()">Post Blog</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Username Popup -->
+
+  <div id="username-popup">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="pet" width="100">
+
+    <input type="text" id="username" placeholder="Enter your username">
+
+    <button onclick="setUsername()">Submit</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
